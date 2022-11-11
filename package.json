@@ -19,6 +19,7 @@
     "babel-loader": "^9.1.0",
     "core-js": "^3.26.0",
     "css-loader": "^6.7.1",
+    "d3-geo": "^3.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "regenerator-runtime": "^0.13.10",
     "sass": "^1.56.1",
@@ -27,4 +28,3 @@
     "webpack-cli": "^4.10.0"
   }
 }
-

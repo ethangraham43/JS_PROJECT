@@ -1,6 +1,8 @@
-import Example from "./scripts/example";
+// import Example from "./scripts/example";
+import Map from "./scripts/map.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("main");
-    new Example(main);
+    new Map(main);
 });
+
