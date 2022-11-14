@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: Arial, Helvetica, sans-serif;
 }
 p {
@@ -9,11 +9,4 @@ svg {
 }
 .selected {
     fill: yellow;
-}
-group-title {
-    text-align: right;
-}
-
-.groupA {
-    fill: red;
-}
+} */

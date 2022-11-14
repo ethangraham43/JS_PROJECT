@@ -1,0 +1,4 @@
+class Team {
+    constructor() {
+    }
+}

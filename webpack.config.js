@@ -41,9 +41,6 @@ module.exports = (env, argv) => {
   } else {
     config.devtool = 'eval-source-map';
   }
-  config.node = {
-    "fs": "empty",
-  }
 
   return config;
 }
