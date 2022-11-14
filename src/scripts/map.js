@@ -1,14 +1,9 @@
-// import * as worldMap from "../../countries-110m.json"
-// import * as groups from ".../data/groups.json"
-
 class Map {
     constructor() {
         this.renderMap()
     }
 
     renderMap() {
-        // debugger
-        // console.log(groups)
         const width = 975;
         const height = 610;
 
@@ -29,12 +24,6 @@ class Map {
                     .enter().append("path")
                     .attr("class", "country")
                     .attr("d", path)
-                    .on("mouseover", function(d) {
-                        d3.select(this).classed("selected", true)
-                    })
-                    .on("mouseout", function(d) {
-                        d3.select(this).classed("selected", false) 
-                    })
             
             d3
                 .selectAll('.country')
@@ -42,19 +31,84 @@ class Map {
                 .forEach(ele => {
                     if (["Qatar", "Ecuador", "Senegal", "Netherlands"].includes(ele.__data__.properties.name)) {
                         d3.select(ele).classed("groupA", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["United Kingdom", "Iran", "United States of America", "Ireland"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupB", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["Argentina", "Saudi Arabia", "Mexico", "Poland"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupC", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["France", "Australia", "Denmark", "Tunisia"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupD", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["Spain", "Costa Rica", "Germany", "Japan"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupE", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["Belgium", "Croatia", "Morocco", "Canada"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupF", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["Brazil", "Switzerland", "Serbia", "Cameroon"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupG", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
+                    }
+                    if (["Portugal", "Ghana", "Uruguay", "South Korea"].includes(ele.__data__.properties.name)) {
+                        d3.select(ele).classed("groupH", true)
+                        .on("mouseover", function(d) {
+                            d3.select(this).classed("selected", true)
+                        })
+                        .on("mouseout", function(d) {
+                            d3.select(this).classed("selected", false) 
+                        })
                     }
                     ele.addEventListener("click", function () {
-                        // debugger;
                         ele.classList.add('blue');
-                        // alert(ele.__data__.properties.name);
+                        alert(ele.__data__.properties.name);
                     })
                 })
 
             })
     }
-
-
-
 }
 
 export default Map

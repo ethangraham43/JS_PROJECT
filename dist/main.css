@@ -1,8 +1,12 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+h1 {
+  text-align: center;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Open 45 Light;
 }
 
 p {
@@ -13,14 +17,66 @@ svg {
   background: white;
 }
 
-.selected {
-  fill: yellow;
+.groups-sidebar {
+  flex-direction: column;
+  float: right;
+  margin-top: -60px;
+  margin-right: 200px;
+  display: flex;
+  font-size: small;
+  text-align: center;
 }
 
-group-title {
-  text-align: right;
+#group-titles {
+  margin-right: 30px;
+  list-style: none;
+  text-align: center;
+}
+
+#group-item {
+  font-size: x-small;
 }
 
 .groupA {
-  fill: red;
+  fill: pink;
+  color: pink;
+}
+
+.groupB {
+  fill: green;
+  color: green;
+}
+
+.groupC {
+  fill: purple;
+  color: purple;
+}
+
+.groupD {
+  fill: navy;
+  color: navy;
+}
+
+.groupE {
+  fill: teal;
+  color: teal;
+}
+
+.groupF {
+  fill: orange;
+  color: orange;
+}
+
+.groupG {
+  fill: cyan;
+  color: cyan;
+}
+
+.groupH {
+  fill: maroon;
+  color: maroon;
+}
+
+.selected {
+  fill: yellow;
 }
