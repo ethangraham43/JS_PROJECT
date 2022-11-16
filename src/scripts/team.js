@@ -1,3 +1,5 @@
+import TeamPage from "./teampage"
+
 const groups = {"groupA": ["Qatar", "Ecuador", "Senegal", "Netherlands"],
 "groupB": ["United Kingdom", "Iran", "United States of America", "Ireland"],
 "groupC": ["Argentina", "Saudi Arabia", "Mexico", "Poland"],
@@ -12,10 +14,10 @@ class Team {
     constructor(ele) {
         this.ele = ele
         this.name = ele.__data__.properties.name
+        // debugger
+        ele.addEventListener("click", this.openTeamPage.bind(this)) 
 
-        // this.addEventListener("click", openTeamPage) {
-
-        // }
+        
         // this.selectFunction()
         for (let key in groups) {
             let countryArray = groups[key]
@@ -28,6 +30,11 @@ class Team {
 
     addGroup() {
         d3.select(this.ele).classed(this.group, true)
+    }
+
+    openTeamPage() {
+        new TeamPage(this.name)
+        console.log("hello")
     }
 
     // selectFunction() {

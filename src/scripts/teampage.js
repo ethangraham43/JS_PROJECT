@@ -1,15 +1,27 @@
 import Team from "./team.js"
-import * as data from "../teams.json"
+import teamData from "../teams.json";
 
 class TeamPage {
-    constructor(ele) {
-        this.ele = ele;
-        this.name = data.name
-        this.addEventListener("click", this.renderTeamPage(this))
+    constructor(name) {
+        this.name = name;
+        console.log(teamData)
+        this.getData(name)
+        // this.data = this.renderTeamPage(name)
     }
 
-    renderTeamPage () {
-        
+    getData (name) {
+        console.log(name)
+        teamData.teams.forEach((team) => {
+            if (team.name === name) {
+                console.log(name)
+                this.data = team
+            }
+        })
+        this.renderData(this.data)
+    }
+
+    renderData(data) {
+        let map = document.getElementById("map")
     }
 
 }

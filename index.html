@@ -10,7 +10,7 @@
     <script src="./dist/main.js"></script>
     <link rel="stylesheet" href="src/index.scss">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
   </head>
 
   <body>
@@ -133,7 +133,24 @@
         </ul>
     </section>
     <div id="map"></div>
+    <div id="teampage" class="outerModal">
+        <div class="innerModal">
+
+        </div>
+    </div>
 
   </body>
 
 </html>
+
+<!-- within div, position: fixed
+opacity of 25%ish
+display: none (have this as block while designing)
+when country clicked on 
+z index of 1
+div within with display flex, centered
+h1 with id of name, etc. for each class
+Within renderTeam, find element through doc.getelement
+set innertext to data itself
+
+two classes of hiddenmodal(display: hidden) and clickedmodal(display:block) -->

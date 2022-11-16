@@ -81,3 +81,8 @@ p {
 .selected {
   fill: yellow;
 }
+
+.outerModal {
+  z-index: 1;
+  position: fixed;
+}

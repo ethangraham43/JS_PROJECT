@@ -6,8 +6,8 @@ import TeamPage from "./scripts/teampage.js"
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("main");
     // new Team(main);
-    new TeamPage(main)
     new Map()
+    // new TeamPage(main)
 });
 
 // document.getElementByID.addEventListener()
