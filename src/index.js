@@ -1,17 +1,12 @@
 // // import Example from "./scripts/example";
 import Map from "./scripts/map.js"
 import Team from "./scripts/team.js"
+import TeamPage from "./scripts/teampage.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-    // const main = document.getElementById("main");
+    const main = document.getElementById("main");
     // new Team(main);
-    // main.on("mouseover", function(d) {
-    //     main.select(main.ele).classed("selected", true)
-    // })
-    // main.on("mouseout", function(d) {
-    //     main.select(main.ele).classed("selected", false) 
-    // })
-    // console.log("hello")
+    new TeamPage(main)
     new Map()
 });
 

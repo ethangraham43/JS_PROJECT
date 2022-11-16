@@ -16,6 +16,7 @@ class Team {
         // this.addEventListener("click", openTeamPage) {
 
         // }
+        // this.selectFunction()
         for (let key in groups) {
             let countryArray = groups[key]
             if (countryArray.includes(this.name)) {
@@ -23,18 +24,21 @@ class Team {
                 this.addGroup()
             }
         }
-
-        this.ele.addEventListener("mouseover", function(d) {
-            d3.select(this.ele).classed("selected", true)
-            })
-        this.ele.addEventListener("mouseout", function(d) {
-            d3.select(this.ele).classed("selected", false)
-        })
     }
 
     addGroup() {
         d3.select(this.ele).classed(this.group, true)
     }
+
+    // selectFunction() {
+    //     // debugger
+    //     .on("mouseover", function(d) {
+    //         d3.select(this.ele).classed("selected", true)
+    //         })
+    //     .on("mouseout", function(d) {
+    //         d3.select(this.ele).classed("selected", false)
+    //     })
+    // }
     
 }
 

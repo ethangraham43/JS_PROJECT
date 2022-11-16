@@ -32,13 +32,8 @@ class Map {
                 ._groups[0]
                 .forEach(ele => {
                     new Team(ele)
-                    // .on("mouseover", function(d) {
-                    //     d3.select(ele).classed("selected", true)
-                    // })
-                    // .on("mouseout", function(d) {
-                    //     d3.select(ele).classed("selected", false) 
-                    // })
                 })
+
     })
 }
 }
