@@ -43,46 +43,120 @@ p {
   color: pink;
 }
 
+.groupA:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupB {
   fill: green;
   color: green;
 }
 
+.groupB:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupC {
+  cursor: pointer;
   fill: purple;
   color: purple;
 }
 
+.groupC:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupD {
+  cursor: pointer;
   fill: navy;
   color: navy;
 }
 
+.groupD:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupE {
+  cursor: pointer;
   fill: teal;
   color: teal;
 }
 
+.groupE:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupF {
+  cursor: pointer;
   fill: orange;
   color: orange;
 }
 
+.groupF:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupG {
+  cursor: pointer;
   fill: crimson;
   color: crimson;
 }
 
+.groupG:hover {
+  cursor: pointer;
+  fill: yellow;
+}
+
 .groupH {
+  cursor: pointer;
   fill: maroon;
   color: maroon;
 }
 
-.selected {
+.groupH:hover {
+  cursor: pointer;
   fill: yellow;
 }
 
 .outerModal {
   z-index: 1;
   position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.innerModal {
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#teamName {
+  text-align: center;
 }

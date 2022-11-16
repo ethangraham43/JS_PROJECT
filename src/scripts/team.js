@@ -17,6 +17,7 @@ class Team {
         // debugger
         ele.addEventListener("click", this.openTeamPage.bind(this)) 
 
+
         
         // this.selectFunction()
         for (let key in groups) {
@@ -34,7 +35,6 @@ class Team {
 
     openTeamPage() {
         new TeamPage(this.name)
-        console.log("hello")
     }
 
     // selectFunction() {
