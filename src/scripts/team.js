@@ -1,4 +1,5 @@
 import TeamPage from "./teampage"
+import teamData from "../teams.json";
 
 const groups = {"groupA": ["Qatar", "Ecuador", "Senegal", "Netherlands"],
 "groupB": ["United Kingdom", "Iran", "United States of America", "Ireland"],
@@ -14,12 +15,17 @@ class Team {
     constructor(ele) {
         this.ele = ele
         this.name = ele.__data__.properties.name
-        // debugger
         ele.addEventListener("click", this.openTeamPage.bind(this)) 
+        teamData.teams.forEach((country) =>{
+            if (this.name === country.name) {
+                ele.addEventListener('mouseover', () => {
+                    // debugger;
+                    let country = document.getElementById("hoverName");
+                    country.innerText = this.name
+                });
+            }
+        })
 
-
-        
-        // this.selectFunction()
         for (let key in groups) {
             let countryArray = groups[key]
             if (countryArray.includes(this.name)) {
@@ -36,16 +42,6 @@ class Team {
     openTeamPage() {
         new TeamPage(this.name)
     }
-
-    // selectFunction() {
-    //     // debugger
-    //     .on("mouseover", function(d) {
-    //         d3.select(this.ele).classed("selected", true)
-    //         })
-    //     .on("mouseout", function(d) {
-    //         d3.select(this.ele).classed("selected", false)
-    //     })
-    // }
     
 }
 
