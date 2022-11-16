@@ -31,6 +31,8 @@ class TeamPage {
         console.log(data)
         let teamName = document.getElementById("teamName");
         teamName.innerText = data.name
+        let flag = document.getElementById("teamFlag");
+        flag.setAttribute("src", data.flag);
         let match1 = document.getElementById("match1");
         // debugger;
         match1.innerText = data.firstMatch[0] + "  " + data.firstMatch[1];
@@ -42,6 +44,10 @@ class TeamPage {
         // const modal = document.getElementById("teampage");
         let player = document.getElementById("playerName");
         player.innerText = data.player;
+
+        let a = document.getElementById("playerPic");
+        a.setAttribute("src", data.playerPicture);
+        debugger;
 
         // let data = document.getElementById("teampage").innerText;
         

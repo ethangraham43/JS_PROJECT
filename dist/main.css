@@ -157,6 +157,16 @@ p {
   cursor: pointer;
 }
 
+#playerPic {
+  width: 200px;
+  height: 200px;
+}
+
+#teamFlag {
+  width: 150px;
+  height: 100px;
+}
+
 #teamName {
   text-align: center;
 }
