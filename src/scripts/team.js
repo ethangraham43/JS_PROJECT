@@ -31,11 +31,11 @@ class Team {
                     });
                 }
                 else {
-                ele.addEventListener('mouseover', () => {
-                    let country = document.getElementById("hoverName");
-                    country.innerText = this.name
-                });
-            }
+                    ele.addEventListener('mouseover', () => {
+                        let country = document.getElementById("hoverName");
+                        country.innerText = this.name
+                    });
+                }
             }
         })
 

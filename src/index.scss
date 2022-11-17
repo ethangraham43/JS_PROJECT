@@ -1,6 +1,5 @@
 #map {
     border-radius: 25px;
-
 }
 
 #logo {
@@ -13,20 +12,21 @@
 
 }
 
+body {
+    color: lightgray;
+}
+
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: rgb(239, 239, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 p {
     font-size: 0.85em;
 }
-svg {
-    
-}
 .groups-sidebar {
     flex-direction: column;
     float: right;
-    margin-top: -100px;
+    margin-top: -125px;
     margin-right: 200px;
     display: flex;
     font-size: small;
@@ -35,6 +35,12 @@ svg {
     border-right-style: solid;
     border-bottom-style: dotted;
     border-left-style: solid;
+    border-color: maroon;
+
+}
+
+.groups-title {
+    color: maroon;
 }
 
 #group-titles {
@@ -145,6 +151,7 @@ svg {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    color: maroon;
 }
 
 .innerModal {
@@ -153,7 +160,7 @@ svg {
     width: 80%;
     border: 5px solid maroon;
     background-color: whitesmoke;
-    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
+
 }
 
 .close {
@@ -172,6 +179,7 @@ svg {
 
 .instructions {
     font-weight: bold;
+    padding: 20px;
     text-align: center;
     border: 5px solid maroon;
     background-color: whitesmoke;
@@ -183,8 +191,8 @@ svg {
     flex-direction: column;
     display: flex;
     flex-flow: column;
-    margin-top: -300px;
-    margin-right: 250px;
+    margin-top: -260px;
+    margin-right: 220px;
 }
 
 #playerPic {
@@ -196,8 +204,7 @@ svg {
     width: 150px;
     height: 100px;
     position: absolute;
-    right: 0px;
-    width: 300px;
+    margin-left: 265px;
     padding: 10px;
 }
 
@@ -209,7 +216,7 @@ svg {
         position: absolute;
         display: block;
         width: 120px;
-        background-color: black;
+        background-color: maroon;
         color: #fff;
         text-align: center;
         padding: 5px 0;
@@ -220,6 +227,7 @@ svg {
 }
 
 #instModal {
+    color: maroon;
     z-index: 1;
     position: fixed;
     display: block;
@@ -240,8 +248,10 @@ svg {
 .instClose {
     color: red;
     float: right;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
+    margin-top: 3px;
+    margin-right: 8px;
 
 }
 
@@ -253,17 +263,30 @@ svg {
 }
 
 .flagAndSched {
-    margin-left: 250px;
+    margin-left: 225px;
 }
 
 .instOpen {
     float: right;
     margin-right: 20px;
-    color: red;
+    color: maroon;
 }
 .instOpen:hover,
 .instOpen:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.github .githubLogo {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 5px;
+}
+.linkedin .linkedinLogo {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 5px;
 }
