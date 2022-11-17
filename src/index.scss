@@ -151,6 +151,9 @@ svg {
     margin: 15% auto;
     padding: 20px;
     width: 80%;
+    border: 5px solid maroon;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
 }
 
 .close {
@@ -190,14 +193,16 @@ svg {
 }
 
 .teamFlag {
-    align-items: center;
     width: 150px;
     height: 100px;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
 }
 
 #teamName {
     text-align: center;
-
 }
 
 #hoverName {
