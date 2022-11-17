@@ -26,7 +26,6 @@ class Map {
                     .enter().append("path")
                     .attr("class", "country")
                     .attr("d", path)
-            // debugger
             d3
                 .selectAll('.country')
                 ._groups[0]
