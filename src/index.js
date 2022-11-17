@@ -5,6 +5,11 @@ import TeamPage from "./scripts/teampage.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     new Map()
+    let instModal = document.getElementById("instModal");
+    let instSpan = document.getElementsByClassName("instClose")[0];
+    instSpan.addEventListener("click", () => {
+        instModal.style.display = "none"
+    })
 });
 
 

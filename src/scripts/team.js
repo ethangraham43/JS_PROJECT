@@ -18,11 +18,24 @@ class Team {
         ele.addEventListener("click", this.openTeamPage.bind(this)) 
         teamData.teams.forEach((country) =>{
             if (this.name === country.name) {
+                if (this.name === "United Kingdom") {
+                    ele.addEventListener('mouseover', () => {
+                        let country = document.getElementById("hoverName");
+                        country.innerText = "England"
+                    });
+                }
+                else if (this.name === "Ireland") {
+                    ele.addEventListener('mouseover', () => {
+                        let country = document.getElementById("hoverName");
+                        country.innerText = "Wales"
+                    });
+                }
+                else {
                 ele.addEventListener('mouseover', () => {
-                    // debugger;
                     let country = document.getElementById("hoverName");
                     country.innerText = this.name
                 });
+            }
             }
         })
 
