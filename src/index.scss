@@ -170,6 +170,9 @@ svg {
 .instructions {
     font-weight: bold;
     text-align: center;
+    border: 5px solid maroon;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
 }
 
 .player {
@@ -232,8 +235,9 @@ svg {
 .instClose {
     color: red;
     float: right;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
+
 }
 
 .instClose:hover,
@@ -244,6 +248,17 @@ svg {
 }
 
 .flagAndSched {
-
     margin-left: 250px;
+}
+
+.instOpen {
+    float: right;
+    margin-right: 20px;
+    color: red;
+}
+.instOpen:hover,
+.instOpen:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
