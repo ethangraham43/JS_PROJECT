@@ -34,7 +34,7 @@ Once you've found the country you're looking for, simply click on its outline on
 
         (this.modal).style.display = "block"
 ```
--Accessing my manually created dataset through a teampage class, I was able to create a dynamic modal for each nation. Using a helper function and an event listener, a user can access each of these modals easily on the map. 
+Accessing my manually created dataset through a teampage class, I was able to create a dynamic modal for each nation. Using a helper function and an event listener, a user can access each of these modals easily on the map. 
 
 ```js
 renderMap() {
@@ -70,17 +70,20 @@ renderMap() {
 
 ```
 
--Using d3 Geo, I was able to render a map and manipulate it to create an object of team for each nation in that map. This allowed me to further access those objects for DOM manipulation, enabling the user interaction displayed above.
+Using d3 Geo, I was able to render a map and manipulate it to create an object of team for each nation in that map. This allowed me to further access those objects for DOM manipulation, enabling the user interaction displayed above.
 
 ## Technologies, Libraries, API's, etc.
 
-This project is be implemented with the following technologies:
+**This project is be implemented with the following technologies:**
 
--The d3 API to access the interactive map that d3 Geo provides.
--Vanilla DOM to create accessible modals and the hover function clarifying which nation you are looking at.
--Webpack to bundle and transpile the source JavaScript code.
+The d3 API to access the interactive map that d3 Geo provides.
+
+Vanilla DOM to create accessible modals and the hover function clarifying which nation you are looking at.
+
+Webpack to bundle and transpile the source JavaScript code.
 
 ## Future Implementation
 
--Adding a more interactive modal.
--Providing the user a slider to choose past world cups and check the group layout of the past.
+Adding a more interactive modal.
+
+Providing the user a slider to choose past world cups and check the group layout of the past.
